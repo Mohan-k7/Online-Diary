@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+<h1>compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" type="text" name="txt" autocomplete="off" placeholder="Heading">
+    <label>Special Title</label>
+    <input class="form-control" type="text" name="stxt" autocomplete="off" placeholder="Title of your day">
+    <label>Content</label>
+    <textarea  class="form-control" name="txta" rows="5" cols="30" placeholder="Write about your topic"></textarea>
+   
+    </div>
+    <button class="btn btn-primary" type="submit" name="btn" value="<%=mail%>" > Publish</button>
+</form>
+<%- include("partials/footer"); -%>

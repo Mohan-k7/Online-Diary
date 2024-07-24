@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+        <h1>Welcome to Your Personal Dairy,</h1>
+        <p><%= dis %></p>
+        
+    
+     <%   posts.findLast(function(post){  %>
+       
+      <h1 class="s"><%=post.title%><span style="font-size: 24px;margin-left: 8px;margin-top:-2px;color: rgba(0, 0, 0, 0.589);"><%= post.stitle %></span></h1>
+      <p>
+      <%=post.content.substring(0,100) + " ..."%>
+      <a href="/posts/<%=post._id%>">Read More</a>
+      </p>
+           
+      <%  }) %>
+
+       
+       
+      
+<%- include("partials/footer"); -%>     
+ 
