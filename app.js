@@ -21,6 +21,7 @@ const aboutContent = "Our digital diary brings convenience and accessibility to 
 const app = express();
 
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 app.use(bodyp.urlencoded({extended: true}));
 app.use(express.static("public"));
