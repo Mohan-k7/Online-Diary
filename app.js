@@ -9,7 +9,7 @@ const _=require("lodash");
 const passport=require("passport");
 const psplcl=require("passport-local");
 const psplclmng=require("passport-local-mongoose");
-const bcrypt=require("bcrypt");
+const bcrypt=require("bcryptjs");
 const saltRounds=12;
 
 
